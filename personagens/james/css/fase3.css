@@ -1,102 +1,83 @@
-
-
-
-p{
-    background-color: rgba(0, 0, 0, 0.404);
-    color: rgba(255, 255, 255, 0.815);
-    font-family:  'Arial', 'Helvetica', 'sans-serif';
-    font-size: 20px;
-    border-radius: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@1,100&family=Shadows+Into+Light&display=swap');
+body {
+    margin: 0;
+    
+    background-image: url(../img/residente\ evil.gif);
+    background-size: cover;
 }
 
-ul{
+
+
+h1,
+p {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    background-image: linear-gradient(to top, #e6e9f075 0%, #eef1f579 100%);
+    color: black;
+}
+
+.escolhas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opçao {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    
 }
 
-li {
+.opçao a {
     display: block;
-    background-color: white;
+    background-image: linear-gradient(to top, #e6e9f075 0%, #eef1f579 100%);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
     padding: 1rem 2rem;
     border-radius: 4px;
-    color: black;
+    color: rgb(20, 19, 19);
     text-transform: uppercase;
     border: 2px solid white;
+    text-decoration: none;
 }
-
-li:hover{
-    border: 2px solid rgb(224, 8, 8);
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25em var(--glow-color),
-           0 0 4em 2em var(--glow-spread-color),
-           inset 0 0 .75em .25em var(--glow-color);
-}
-
 
 .botao {
+
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
     justify-content: center;
-    margin: 1rem;
-    padding: 2rem;
+    align-items: center;
+
+
 }
 
-/* From uiverse.io */
 button {
-    --glow-color: rgb(255, 176, 176);
-    --glow-spread-color: rgba(255, 123, 123, 0.781);
-    --enhanced-glow-color: rgb(255, 206, 206);
-    --btn-color: rgb(136, 61, 61);
-    border: .25em solid var(--glow-color);
-    padding: 1em 3em;
-    color: var(--glow-color);
-    font-size: 15px;
-    font-weight: bold;
-    background-color: var(--btn-color);
-    border-radius: 1em;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
     outline: none;
-    box-shadow: 0 0 1em .25em var(--glow-color),
-           0 0 4em 1em var(--glow-spread-color),
-           inset 0 0 .75em .25em var(--glow-color);
-    text-shadow: 0 0 .5em var(--glow-color);
-    position: relative;
-    transition: all 0.3s;
-    text-decoration: none;
-   }
-
-   a{
-       text-decoration: none;
-   }
-   
-   button::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: .7;
-    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
    }
    
    button:hover {
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25em var(--glow-color),
-           0 0 4em 2em var(--glow-spread-color),
-           inset 0 0 .75em .25em var(--glow-color);
+    background-color: #E40017;
+    box-shadow: 0px 15px 20px #6e010c;
+    color: #fff;
+    transform: translateY(-7px);
    }
    
    button:active {
-    box-shadow: 0 0 0.6em .25em var(--glow-color),
-           0 0 2.5em 2em var(--glow-spread-color),
-           inset 0 0 .5em .25em var(--glow-color);
+    transform: translateY(-1px);
    }
+
