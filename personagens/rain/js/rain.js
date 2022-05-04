@@ -5,12 +5,15 @@ function escolhaCerta(){
         escolha = Number(prompt("Escolha a alternativa 1, 2 ou 3"));
 
         if(escolha === 1){
-            location.href ="./fase1-gameover.html";
+            location.href ="./fase1.html";
 
         } else if (escolha === 2){
 
-            location.href ="./fase1.html";
+            location.href ="./fase1-gameover.html";
 
+        } else if (escolha === 3) {
+
+            location.href = "./fase1-gameover.html";
         }
         
         else {
@@ -23,7 +26,7 @@ function escolhaCerta(){
 function escolhaCerta2(){
     let escolha;
 
-    while(escolha !== 1 && escolha !== 2){
+    while(escolha !== 1 && escolha !== 2 ){
         escolha = Number(prompt("Escolha a alternativa 1 ou 2"));
 
         if(escolha === 1){
@@ -31,57 +34,51 @@ function escolhaCerta2(){
 
         } else if (escolha === 2){
 
-            location.href ="./fase2-gameover.html";
+            location.href ="./fase1-gameover.html";
 
-        }
-        
-        else {
+        } else {
             alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")
         } 
             
-    }
+     }
 }
 
 function escolhaCerta3(){
     let escolha;
 
-    while(escolha !== 1 && escolha !== 2){
+    while(escolha !== 1 && escolha !== 2 ){
         escolha = Number(prompt("Escolha a alternativa 1 ou 2"));
 
         if(escolha === 1){
-            location.href ="./fase3-gameover.html";
+            location.href ="./fase3.html";
 
         } else if (escolha === 2){
 
-            location.href ="./fase3.html";
+            location.href ="./fase2-gameover.html";
 
-        }
-        
-        else {
+        } else {
             alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")
         } 
             
-    }
+     }
 }
 
 function escolhaCerta4(){
     let escolha;
 
-    while(escolha !== 1 && escolha !== 2){
+    while(escolha !== 1 && escolha !== 2 ){
         escolha = Number(prompt("Escolha a alternativa 1 ou 2"));
 
         if(escolha === 1){
-            location.href ="./fase4.html";
+            location.href ="./fase3-gameover.html";
 
         } else if (escolha === 2){
 
-            location.href ="./fase3-gameover.html";
+            location.href ="./fase4.html";
 
-        }
-        
-        else {
+        } else {
             alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")
         } 
             
-    }
+     }
 }

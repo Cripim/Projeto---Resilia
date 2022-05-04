@@ -1,17 +1,19 @@
-function nextStep(){
-    let question1;
+function escolhaCerta(){
+    let escolha;
 
-    while(question1 !== 1 && question1 !== 2 && question1 !== 3){
-        question1 = Number(prompt("Escolha a alternativa 1, 2 ou 3"));
+    while(escolha !== 1 && escolha !== 2 ){
+        escolha = Number(prompt("Escolha a alternativa 1, 2 ou 3"));
 
-        if(question1 === 1){
-            location.href ="../personagens/alice/fase1-mansao/fase1.html";
-        } else if (question1 === 2){
+        if(escolha === 1){
+            location.href ="./personagens/alice/fase1.html";
+        } else if (escolha === 2){
 
-            alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")
+            location.href ="./personagens/alice/fase1-gameover.html";
 
-        } else if (question1 ===3){
-            alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")
+        } else if (escolha ===3){
+
+            location.href 
+            
 
         }
         
@@ -22,3 +24,4 @@ function nextStep(){
 
     }
 }
+
