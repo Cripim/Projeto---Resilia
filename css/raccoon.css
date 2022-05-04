@@ -53,3 +53,23 @@ p {
 
 
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 255, 0.192);
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+}
+.diego {
+    text-decoration: none;
+    font-family: fantastic;
+    color: white;
+    text-shadow: #000 2px 3px 2px;
+}
+.diego:hover {
+    font-size: 130%;
+    transition: 1s;
+}
